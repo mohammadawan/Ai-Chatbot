@@ -18,8 +18,9 @@ server/config/serviceAccountKey.json
 # Build
 client/dist/
 
-# Logs
+# Logs & temp files
 *.log
+*.err
 npm-debug.log*
 
 # OS
