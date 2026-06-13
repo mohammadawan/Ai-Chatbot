@@ -1,0 +1,23 @@
+{
+  "name": "ai-chatbot-server",
+  "version": "1.0.0",
+  "description": "AI Chatbot Express Backend",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^16.6.1",
+    "express": "^4.22.2",
+    "firebase-admin": "^14.0.0",
+    "groq-sdk": "^1.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

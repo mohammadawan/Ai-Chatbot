@@ -1,0 +1,31 @@
+# Dependencies
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Environment
+.env
+.env.local
+.env.*.local
+client/.env
+client/.env.local
+server/.env
+server/.env.local
+
+# Firebase service account key — contains private key, never commit
+server/config/serviceAccountKey.json
+
+# Build
+client/dist/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
