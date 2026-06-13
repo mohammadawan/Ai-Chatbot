@@ -1,6 +1,6 @@
 const Groq = require("groq-sdk");
 const { db } = require("../config/firebase");
-const { FieldValue, Timestamp } = require("firebase-admin/firestore");
+const { FieldValue } = require("firebase-admin/firestore");
 
 const groq = new Groq({ apiKey: process.env.GROQ_API_KEY });
 
@@ -46,7 +46,7 @@ const sendMessage = async (req, res) => {
     });
 
     const botResponse = completion.choices[0]?.message?.content?.trim();
-    if (!botResponse) throw new Error("Empty response from OpenAI");
+    if (!botResponse) throw new Error("Empty response from Groq");
 
     // Save to Firestore (non-blocking)
     userChatsRef(userId)
