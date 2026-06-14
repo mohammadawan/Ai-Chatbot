@@ -8,7 +8,6 @@ const FIREBASE_ERRORS = {
   "auth/email-already-in-use": "An account with this email already exists.",
   "auth/weak-password": "Password must be at least 6 characters.",
   "auth/invalid-email": "Please enter a valid email address.",
-  "auth/popup-closed-by-user": "Sign-in was cancelled.",
   "auth/too-many-requests": "Too many attempts. Please wait a moment and try again.",
 };
 
