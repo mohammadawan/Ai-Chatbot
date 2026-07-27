@@ -7,7 +7,7 @@ Frontend → Vercel   (React + Vite)
 Backend  → Railway  (Node.js + Express)
 Auth     → Firebase (Google + Email/Password)
 Storage  → Firestore
-AI       → Groq — Llama 3.3 70B
+AI       → Groq — Qwen 3.6 27B
 ```
 
 ---
@@ -175,7 +175,7 @@ All endpoints require `Authorization: Bearer <firebase_id_token>` header.
 ```json
 {
   "response": "Async/await is syntactic sugar over Promises...",
-  "model": "llama-3.3-70b-versatile",
+  "model": "qwen/qwen3.6-27b",
   "usage": { "prompt_tokens": 45, "completion_tokens": 120, "total_tokens": 165 }
 }
 ```
@@ -190,6 +190,6 @@ All endpoints require `Authorization: Bearer <firebase_id_token>` header.
 | Backend | Node.js 18+, Express 4 |
 | Authentication | Firebase Authentication |
 | Database | Firestore |
-| AI | Groq — Llama 3.3 70B |
+| AI | Groq — Qwen 3.6 27B |
 | Frontend Deploy | Vercel |
 | Backend Deploy | Railway |
